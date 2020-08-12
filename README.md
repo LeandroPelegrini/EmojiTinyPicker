@@ -7,4 +7,4 @@ Build on top of [Svelte](svelte.dev/), [Neutralinojs](https://neutralino.js.org/
 
 ✂ Removed the Electron stuff, just a 1.6mb for linux and 14mb ram.
 
-![How to](relative/path/to/img.jpg?raw=true "Title")
+![How to](https://github.com/LeandroPelegrini/EmojiTinyPicker/blob/master/Peek%202020-08-12%2014-28.gif "How to")
