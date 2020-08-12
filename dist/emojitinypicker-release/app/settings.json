@@ -1,0 +1,16 @@
+{
+  "appname": "emojitinypicker",
+  "appport": "0",
+  "url": "/",
+  "mode": "window",
+  "window": {
+    "title": "EmojiTinyPicker",
+    "width": "344",
+    "height": "443",
+    "fullscreen": false,
+    "alwaysontop": false,
+    "iconfile": "pinching-hand_1f90f.png",
+    "enableinspector": false,
+    "borderlesswindow": true
+  }
+}
