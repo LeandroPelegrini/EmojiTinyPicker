@@ -1,26 +1,11 @@
-# neutralinojs-svelte
+# 🤏 EmojiTinyPicker
 
-Svelte starter project for Neutralinojs
+Just a 🤏 tiny emoji picker 🤞 cross-plataform.
 
-## Get started
+Built on top of [Svelte](svelte.dev/), [Neutralinojs](https://neutralino.js.org/) and [emoji-picker-element](https://github.com/nolanlawson/emoji-picker-element)
 
-Clone the repo 
+🔥 Highly inspired by [mojibar](https://github.com/muan/mojibar)
 
-```bash
-$ git clone https://github.com/neutralinojs/neutralinojs-svelte.git
-$ cd neutralinojs-svelte
-```
+✂ Removed the Electron stuff, just a 1.6mb for linux and 14mb ram.
 
-Install dependencies 
-
-```bash
-$ npm i
-```
-
-Bundle source files
-
-```bash
-$ npm run build
-```
-
-or simply use [neu-cli](https://neutralino.js.org/docs/#/tools/cli)
+![How to](https://github.com/LeandroPelegrini/EmojiTinyPicker/blob/master/Peek%202020-08-12%2014-28.gif "How to")
