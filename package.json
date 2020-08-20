@@ -1,15 +1,15 @@
 {
-  "name": "neutralinojs-svelte",
-  "version": "0.1.0",
+  "name": "emojitinypicker",
+  "version": "0.2.0",
   "description": "",
   "main": "index.js",
-  "repository": "https://github.com/malipetek/neutralinojs-svelte.git",
+  "repository": "https://github.com/LeandroPelegrini/EmojiTinyPicker.git",
   "scripts": {
     "build": "webpack -p --config webpack.config.js",
     "dev": "webpack --watch & webpack-dev-server --colors | neu run",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "author": "Leandro Pelegrini",
   "license": "ISC",
   "devDependencies": {
     "@babel/core": "^7.9.6",

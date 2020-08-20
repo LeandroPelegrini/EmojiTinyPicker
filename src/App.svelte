@@ -2,6 +2,7 @@
     import Picker from 'emoji-picker-element/svelte'
 
     const picker = new Picker();
+    picker.dataSource = './assets/emojilist.js';
     let pickemojis = [];
     let pickemoji = '';
     let i = -1;
@@ -13,12 +14,13 @@
         pickemoji = (event.detail.emoji.unicode);
         document.querySelector('input').value += pickemoji;
     });
-    function myFunction() {
+    function copyBtn() {
         var copyText = document.getElementById("emojis");
         copyText.select();
         copyText.setSelectionRange(0, 99999)
         document.execCommand("copy");
     }
+
 </script>
 
 <style>
@@ -44,6 +46,6 @@
 <div id="neutralinoapp">
     <div class="copy">
         <input id="emojis" value="">
-        <button id="copyText" on:click="{myFunction}">Copy!</button>
+        <button id="copyText" on:click="{copyBtn}">Copy!</button>
     </div>
 </div>
