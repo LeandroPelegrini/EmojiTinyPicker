@@ -1,5 +1,13 @@
 <script>
     import Picker from 'emoji-picker-element/svelte'
+    import supportsSelector from './supportsSelector'
+
+    const supportsFocusVisible = supportsSelector(':focus-visible')
+
+    if (!supportsFocusVisible) {
+        // only apply the :focus-visible polyfill if it's unsupported
+        require('focus-visible/dist/focus-visible.min.js');
+    }
 
     const picker = new Picker();
     picker.dataSource = './assets/emojilist.js';
@@ -14,6 +22,13 @@
         pickemoji = (event.detail.emoji.unicode);
         document.querySelector('input').value += pickemoji;
     });
+
+    (async () => {
+        if (!supportsFocusVisible) {
+            applyFocusVisiblePolyfill(picker.shadowRoot);
+        }
+    })();
+
     function copyBtn() {
         var copyText = document.getElementById("emojis");
         copyText.select();
